@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang="ru" class="theme-light">
+	<head>
+		<title>TermoSalud</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">	
+		<meta property="og:title" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://">
+		<meta property="og:image" content="ru.html">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="css/style.css" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+	</head>
+	<body>
+		
+		<div class="wrapper">
+			<div class="content">
+				<header class="header" data-aos="zoom-in">
+					<a href="/" class="logo">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+					<div class="header-center">
+						<div class="header-block-on-main">
+							<ul>
+								<li>
+									<img src="images/linfopress.svg" alt="">
+								</li>
+								<li>
+									<img src="images/zionic.svg" alt="">
+								</li>
+								<li>
+									<span>СКОРО</span>
+								</li>
+								<li>
+									<a class="active" href="#">О компании</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<a class="header-phone" href="tel:+380937205277">
+						<img src="images/phone.svg" alt="">
+						+380 93 720 52 77
+					</a>
+				</header>
+				<div class="center">
+                    <div class="about-banner">
+                        <div class="container">
+                            <div data-aos="fade-up" data-aos-delay="200">
+                                Termosalud
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                Ми є експертами в розробці та виробництві передових технологій з високою клінічною ефективністю для сектору естетики та естетичної медицини.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-section">
+                        <div class="container">
+                            <div class="experience-section-bg" data-aos="fade-up" data-aos-delay="0">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <span data-aos="fade-up" data-aos-delay="100">
+                                            Наш великий досвід, що становить понад 35 років, пов’язаний з інноваціями, дозволяє нам пропонувати пацієнтам і професіоналам найефективніші, безпечні та вигідні технологічні рішення та процедури на ринку.
+                                        </span> 
+                                        <p data-aos="fade-up" data-aos-delay="200">
+                                            Ми розробляємо 100% нашої продукції на наших центральних підприємствах в Іспанії.
+                                        </p>
+                                        <p data-aos="fade-up" data-aos-delay="400">
+                                            Termosalud представлена ​​в більш ніж 45 країнах світу, включаючи Європейський Союз та інші ключові світові ринки.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="experience-section-div-for-img" data-aos="fade-up" data-aos-delay="500">
+                                            <img src="images/content/experience.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-video-block">
+                        <div class="container">
+                             <div class="video-block js-video-block" data-aos="fade-up" data-aos-delay="200">
+                                    <!-- Видео превью -->
+                                    <div class="video-poster js-video-poster">
+                                        <video class="modal-video js-preview-video" muted loop playsinline preload="auto">
+                                            <source src="images/content/about-video-prevue.mp4" type="video/mp4">
+                                        </video>
+
+                                        <div class="play-button">
+                                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.3965 4.11135C9.1042 4.20204 7 6.0722 7 8.59182V39.4082C7 42.7677 10.7428 44.9719 13.6816 43.3438L41.4902 27.9356C44.5137 26.2603 44.5137 21.7398 41.4902 20.0645L13.6816 4.65627C12.9469 4.24923 12.1606 4.08112 11.3965 4.11135Z"
+                                                    fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- YouTube -->
+                                    <div class="video-container">
+                                        <div class="js-youtube-player"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <script>
+                            (function () {
+
+                                // Подключаем API только 1 раз
+                                if (!window.youtubeApiLoaded) {
+                                    const tag = document.createElement('script');
+                                    tag.src = 'https://www.youtube.com/iframe_api';
+                                    document.head.appendChild(tag);
+                                    window.youtubeApiLoaded = true;
+                                }
+
+                                const blocks = document.querySelectorAll('.js-video-block');
+
+                                blocks.forEach((block, index) => {
+                                    const poster = block.querySelector('.js-video-poster');
+                                    const previewVideo = block.querySelector('.js-preview-video');
+                                    const playerContainer = block.querySelector('.js-youtube-player');
+
+                                    let player;
+                                    let isPlayerReady = false;
+
+                                    const playerId = 'youtube-player-' + index;
+                                    playerContainer.id = playerId;
+
+                                    window.onYouTubeIframeAPIReady = window.onYouTubeIframeAPIReady || function () {
+                                        blocks.forEach((block, i) => initPlayer(block, i));
+                                    };
+
+                                    function initPlayer(block, i) {
+                                        const container = block.querySelector('.js-youtube-player');
+
+                                        if (container.dataset.inited) return;
+                                        container.dataset.inited = 'true';
+
+                                        const ytPlayer = new YT.Player(container.id, {
+                                            videoId: 'dQw4w9WgXcQ',
+                                            playerVars: {
+                                                playsinline: 1,
+                                                controls: 1,
+                                                rel: 0,
+                                                modestbranding: 1
+                                            },
+                                            events: {
+                                                onReady: (e) => {
+                                                    isPlayerReady = true;
+                                                    e.target.pauseVideo();
+                                                },
+                                                onError: (e) => {
+                                                    console.error('YouTube Player Error:', e.data);
+                                                }
+                                            }
+                                        });
+
+                                        block._ytPlayer = ytPlayer;
+                                    }
+
+                                    poster.addEventListener('click', () => {
+                                        poster.classList.add('hidden');
+                                        previewVideo.pause();
+
+                                        if (block._ytPlayer && isPlayerReady) {
+                                            block._ytPlayer.playVideo();
+                                        }
+                                    });
+
+                                    const observer = new IntersectionObserver(entries => {
+                                        entries.forEach(entry => {
+                                            if (entry.isIntersecting) {
+                                                previewVideo.play().catch(() => {});
+                                            } else {
+                                                previewVideo.pause();
+
+                                                if (block._ytPlayer) {
+                                                    block._ytPlayer.pauseVideo();
+                                                }
+                                            }
+                                        });
+                                    }, {
+                                        threshold: 0.5
+                                    });
+
+                                    observer.observe(block);
+
+                                });
+
+                            })();
+                        </script>
+                    </div><!--about-video-block-->
+                    <div class="about-tabs-block fade-up">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="50">Про нас</div>
+                            <div class="about-tabs">
+                                <div class="about-nav">
+                                    <button class="about-btn about-active" data-tab="1" data-aos="fade-up" data-aos-delay="200">Історія</button>
+                                    <button class="about-btn" data-tab="2" data-aos="fade-up" data-aos-delay="300">Бачення</button>
+                                    <button class="about-btn" data-tab="3" data-aos="fade-up" data-aos-delay="400">Місія</button>
+                                </div>
+
+                                <div class="about-content" data-aos="fade-up" data-aos-delay="500">
+                                    <div class="about-panel about-active" data-tab="1">
+                                        <p>Termosalud — це сімейна компанія, заснована Рамоном дель Валле, яка понад 35 років тому розпочала свою місію з дослідження, розробки та виробництва професійного обладнання для практиків у секторах здоров’я, краси та естетичної медицини. Його підприємницький дух і досвід у секторі медичного та хірургічного обладнання дозволили йому стати першим вітчизняним виробником технологій пресотерапії та термоліполізу в Іспанії у 1980-х роках.</p>
+                                        <p>З тих пір Termosalud значно розширила свій бізнес і лінійку продуктів. Зараз вона працює в більш ніж 45 країнах світу.</p>
+                                    </div>
+                                    <div class="about-panel" data-tab="2">
+                                        <p>Наша мета — експоненціально зростати в усьому світі, щоб і надалі пропонувати нашій мережі клієнтів та їхнім пацієнтам інноваційні рішення, які покращують якість їхнього життя та добробут. Завдяки нашому великому знанню ринку, результату нашого досвіду та бізнес- і людській структурі, Termosalud представляє себе як надійного виробника з технологіями та виробництвом, на 100% зробленим в Іспанії. Ми прагнемо продовжувати розробляти та впроваджувати інноваційні рішення в галузі естетичної медицини з більш глобальним охопленням.</p>
+                                    </div>
+                                    <div class="about-panel" data-tab="3">
+                                        <p>Termosalud складається з професійної команди, яка щодня прагне досягти досконалості та максимальної якості у всіх інноваційних продуктах і виробничих процесах, які ми розробляємо. Наша сімейна сутність відображена в близькості та довірі, які ми передаємо нашим клієнтам і партнерам. Ми ретельно досліджуємо переважні тенденції та технології на ринку, щоб завжди бути в авангарді виробництва ефективних медико-естетичних рішень для професіоналів і пацієнтів.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                document.querySelectorAll('.about-btn').forEach(btn => {
+                                btn.addEventListener('click', () => {
+                                    const id = btn.dataset.tab;
+
+                                    document.querySelectorAll('.about-btn').forEach(b => b.classList.remove('about-active'));
+                                    document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('about-active'));
+
+                                    btn.classList.add('about-active');
+                                    document.querySelector('.about-panel[data-tab="' + id + '"]').classList.add('about-active');
+                                });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="inform-block-one fade-up">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="ibo-bg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                                         <div class="app-video-bg">
+                                            <video autoplay muted loop playsinline>
+                                                <source src="images/presentation-video.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="app-video-content">
+                                                <div class="ibo-text-1" data-aos="fade-up" data-aos-delay="200">
+                                                    Мережа продажів і маркетингу
+                                                </div> 
+                                                <div class="ibo-text-2" data-aos="fade-up" data-aos-delay="400">
+                                                    <p>Termosalud розробила розгалужену мережу міжнародних партнерів у понад 45 країнах світу, включаючи Європейський Союз та інші ключові ринки.</p>
+                                                    <p>Наш міжнародний відділ зосереджує свої зусилля на виявленні нових можливостей для бізнесу, щоб продовжувати розширювати цю мережу.</p>
+                                                </div> 
+                                                <a href="#destribute" class="ibo-button" data-aos="fade-up" data-aos-delay="600">Бажаєте стати дистриб’ютором?</a> 
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="ibo-div-for-img" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+                                        <img src="images/content/ibo-img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inform-block-two fade-up">
+                        <div class="container">
+                            <div class="ibt-bg" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                                <div class="row">
+                                    <div class="col-lg-6">  
+                                        <div class="ibt-text-1" data-aos="fade-up" data-aos-delay="200">
+                                            Виробництво третьою стороною
+                                        </div> 
+                                        <div class="ibt-text-2" data-aos="fade-up" data-aos-delay="400">
+                                            <p>Окрім розробки власного обладнання, ми надаємо виробничі послуги третім сторонам, завжди дотримуючись найвищих стандартів якості згідно зі стандартом ISO 13485, який дозволяє нам розробляти пристрої для медичного сектору (медичні пристрої) на наших підприємствах.</p>
+                                            <p>Ми пропонуємо вам комплексні послуги з точки зору розробки та розробки продукту через наш відділ досліджень і розробок, супроводжуючи вас протягом усього процесу, включаючи отримання маркування CE для вашого пристрою.</p>
+                                            <p>Ми пропонуємо вам наш досвід виробників протягом більше 30 років.</p>
+                                        </div>       
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="ibt-div-for-img" data-aos="fade-up" data-aos-delay="500">
+                                            <img src="images/content/ibt-img.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="philosophy fade-up">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="0">Корпоративна філософія</div>
+                            <div class="philosophy-title-text" data-aos="fade-up" data-aos-delay="200">Розвиток людського капіталу, відданість дослідженням, інноваційна діяльність і якість є, разом із нашою відданістю інтернаціоналізації, стовпами цієї астурійської компанії. Наразі Termosalud представлена ​​в більш ніж двадцяти країнах, розташованих на чотирьох континентах, і бере участь у постійному процесі розширення.</div>
+                            <div class="philosophy-row row">
+                                <div class="col-lg-6">
+                                    <div class="inovations">
+                                        <div class="app-video-bg">
+                                            <video autoplay muted loop playsinline>
+                                                <source src="images/presentation-video.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="app-video-content">
+                                                <div class="inovations-text-1" data-aos="fade-up" data-aos-delay="100">
+                                                    Інновації
+                                                </div>
+                                                <div class="inovations-text-2" data-aos="fade-up" data-aos-delay="300">
+                                                    <p>
+                                                        Відділ досліджень, розробок та інновацій є однією з фундаментальних основ компанії. Ми тісно співпрацюємо з інститутами естетичної медицини та технологічними центрами в пошуках нових застосувань і розробок, завжди використовуючи останні технологічні досягнення, щоб оптимізувати продукт і забезпечити найвищу якість та ефективність. Ця співпраця дозволяє нам вирішувати проекти великої технічної складності та розробляти не лише обладнання, але й новаторські методи лікування, які встановлюють нові стандарти в естетичній та косметичній медицині.
+                                                    </p>
+                                                    <p>
+                                                        Termosalud бере участь в інноваційних проектах у сфері охорони здоров’я з такими організаціями, як Кластер біомедицини та здоров’я Князівства Астурія, BioCEEI, Asturian Innovation Club, Університет Ов’єдо, Prodintec Foundation та Інститут економічного розвитку Князівства Астурія (IDEPA).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>	
+                                    </div>        
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="recognition">
+                                        <div class="recognition-title" data-aos="fade-up" data-aos-delay="100">Визнання</div>
+                                        <div class="recognition-text" data-aos="fade-up" data-aos-delay="300">Як інноваційне МСП, Termosalud отримала визнання та підтримку Національної інноваційної корпорації ENISA (Міністерство промисловості, енергетики та туризму).</div>
+                                        <div class="recognition-row row">
+                                            <div class="col-lg-auto">
+                                                <img src="images/content/recognition-img1.png" alt="" data-aos="fade-up" data-aos-delay="200">
+                                            </div>
+                                            <div class="col-lg-auto">
+                                                <img src="images/content/recognition-img2.png" alt="" data-aos="fade-up" data-aos-delay="400">
+                                            </div>
+                                            <div class="col-lg-auto">
+                                                <img src="images/content/recognition-img3.png" alt="" data-aos="fade-up" data-aos-delay="600">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback fade-up" id="destribute">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="100">
+                                Зв'яжіться з нами
+                            </div>
+                            <div class="feedback-text" data-aos="fade-up" data-aos-delay="300">
+                                Будь ласка, заповніть наступну форму, якщо у вас є запитання, і ми зв’яжемося з вами якомога швидше. Ми будемо раді відповісти на всі ваші запитання.
+                            </div>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group" data-aos="fade-up" data-aos-delay="100">
+                                            <input name="name" type="text" class="form-control" required="" placeholder="Ім'я">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                                            <input name="tel" type="tel" class="form-control" required="" placeholder="Телефон">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedback-text-2" data-aos="fade-up" data-aos-delay="100">Я хотів би отримати більше інформації про</div>
+                                <ul class="feedback-checkbox" data-aos="fade-up" data-aos-delay="300">
+                                    <li>
+                                        <div class="standart-checkbox">
+                                            <input id="c4_c" type="checkbox" checked name="Linfopress Evolution PRO">
+                                            <label for="c4_c"><span>Linfopress Evolution PRO</span></label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="standart-checkbox">
+                                            <input id="c5_c" type="checkbox" name="Zionic">
+                                            <label for="c5_c"><span>Zionic</span></label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="feedback-checkbox-2" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="standart-checkbox">
+                                        <input id="c6_c" type="checkbox" name="">
+                                        <label for="c6_c"><span>Я приймаю Політику конфіденційності</span></label>
+                                    </div>
+                                </div>
+                                <button class="feedback-send" data-aos="fade-up" data-aos-delay="500">Надіслати</button>					
+                            </form>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<footer class="fade-up">
+				<div class="container">
+					<div class="footer-top">
+						<a href="/" class="footer-logo">
+							<img src="images/footer-logo.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="footer-bottom">
+						<div class="row">
+							<div class="col-lg-6">
+								Linfopress Evolution PRO це надійне рішення для клінік, де важлива ефективність, комфорт і швидкий видимий результат
+							</div>
+							<div class="col-lg-6">
+								<ul class="footer-nav">
+									<li>
+										<a href="tel:+380937205277">
+											<img src="images/phone.svg" alt="">
+											+380 93 720 52 77
+										</a>
+									</li>
+									<li>
+										<a href="mailto:sampleemail@gmail.com">
+											<img src="images/mail.svg" alt="">
+											sampleemail@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<!--scripts-->
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap-select.js"></script>
+		
+		<link href="css/swiper.css" rel="stylesheet">
+		<script type="text/javascript" src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+		<script>
+			AOS.init({
+                once: true,
+                mirror: false,
+            });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,979 @@
+<!DOCTYPE html><html lang="ru" class="theme-light">
+	<head>
+		<title>TermoSalud</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">	
+		<meta property="og:title" content="">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://">
+		<meta property="og:image" content="ru.html">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link href="css/style.css" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/swiper.js"></script>
+	</head>
+	<body>
+
+		<div class="wrapper">
+			<div class="content">
+				<header class="header"  data-aos="zoom-in">
+					<a href="/" class="logo">
+						<img src="images/logo.svg" alt="logo">
+					</a>
+					<div class="header-center">
+						<div class="header-block-another">
+                            <div class="custom-select-logo">
+                                <div class="select-display" onclick="toggleSelect()">
+                                <img src="images/linfopress.svg" alt="">
+                                <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8621 4.20374L8 10.3207L2.13793 4.20374C1.87759 3.93209 1.45559 3.93209 1.19525 4.20374C0.934916 4.4754 0.934916 4.91575 1.19525 5.1874L7.52866 11.7962C7.659 11.9322 7.82933 12 8 12C8.17067 12 8.341 11.9322 8.47134 11.7962L14.8047 5.1874C15.0651 4.91575 15.0651 4.4754 14.8047 4.20374C14.5444 3.93209 14.1224 3.93209 13.8621 4.20374Z" fill="#FFFF00"/>
+                                    </svg>
+                                </div>
+                                
+                                <div class="select-options" id="selectOptions">
+                                <a href="#" class="option-item">
+                                    <img src="images/zionic.svg" alt="">
+                                </a>
+                                <a href="#" class="option-item">
+                                    <img src="images/linfopress.svg" alt="">
+                                </a>
+                                </div>
+                            </div>
+                            <script>
+                                function toggleSelect() {
+                                const options = document.getElementById('selectOptions');
+                                const arrow = document.querySelector('.select-arrow');
+                                options.classList.toggle('open');
+                                arrow.classList.toggle('open');
+                                }
+
+                                // Закрыть при клике вне селекта
+                                document.addEventListener('click', (e) => {
+                                const select = document.querySelector('.custom-select-logo');
+                                if (!select.contains(e.target)) {
+                                    document.getElementById('selectOptions').classList.remove('open');
+                                    document.querySelector('.select-arrow').classList.remove('open');
+                                }
+                                });
+                            </script>
+                            
+                            <ul class="header-ul">
+                                <li>
+                                    <a href="#technologies">Технології</a>
+                                </li>
+                                <li>
+                                    <a href="#procedure">Процедура</a>
+                                </li>
+                                <li>
+                                    <a href="#advantages">Переваги</a>
+                                </li>
+                                <li>
+                                    <a href="#indications">Показання</a>
+                                </li>
+                                <li>
+                                    <a href="#why">Чому саме</a>
+                                </li>
+                                <li>
+                                    <a href="#faq">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+					</div>	
+					<a class="header-phone" href="tel:+380937205277">
+						<img src="images/phone.svg" alt="">
+						+380 93 720 52 77
+					</a>
+				</header>
+				<div class="center">
+                    <div class="another-pages-banner" style="background-image: url('images/content/linfopress-main-banner.png');">
+                        <img src="images/content/linfopress-main-banner-mob.png" alt="" class="another-pages-banner-bg-mobile">
+                        <div class="container">
+                            <div data-aos="fade-up" data-aos-delay="200">
+                                Linfopress Evolution PRO
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                Нарешті! Апарат для пресотерапії преміального класу
+                            </div>
+                            <button data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">Дізнатись подробиці</button>
+                        </div>
+                    </div>
+                    <div class="advantages fade-up">
+                        <div class="container">        
+                            <div class="advantages-video-bg">
+                                <video autoplay muted loop playsinline>
+                                    <source src="images/presentation-video.mp4" type="video/mp4">
+                                </video>
+                                <div class="advantages-video-content">
+                                    <ul>
+                                        <li data-aos="fade-up" data-aos-delay="0">
+                                            <div>
+                                                <img src="images/advantages/1.svg" alt="">
+                                            </div>
+                                            <div>
+                                                Нове покоління
+                                            </div>
+                                            <div>
+                                                Нове покоління комбінаторної пресотерапії
+                                            </div>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="100">
+                                            <div>
+                                                <img src="images/advantages/2.svg" alt="">
+                                            </div>
+                                            <div>
+                                                Для всіх розмірів
+                                            </div>
+                                            <div>
+                                                 Три рівня блискавок для пацієнтів всіх розмірів   
+                                            </div>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="200">
+                                            <div>
+                                                <img src="images/advantages/3.svg" alt="">
+                                            </div>
+                                            <div>
+                                                4 етапи
+                                            </div>
+                                            <div>
+                                                Чотири етапи пульсуючої пневматичної компресії
+                                            </div>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="300">
+                                            <div>
+                                                <img src="images/advantages/4.svg" alt="">
+                                            </div>
+                                            <div>
+                                                10 програм    
+                                            </div>
+                                            <div>
+                                                Десять програм послідовної біоміметич
+                                            </div>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="400">
+                                            <div>
+                                                <img src="images/advantages/5.svg" alt="">
+                                            </div>
+                                            <div>
+                                                Унікальність
+                                            </div>
+                                            <div>
+                                                Тільки в Linfopress: пресомасаж холки і love-handles
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="technologies fade-up" id="technologies">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="50">Технології Linfopress Evolution PRO</div>
+                            <div class="technologies-top-text" data-aos="fade-up" data-aos-delay="200">Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії. Linfopress Evolution PRO імітує природні пульсуючі рухи в чотирьох унікальних комбінаціях:</div>
+                            <div class="technologies-row row">
+                                <div class="col-lg-6">
+                                    <a href="#" class="technologies-item" data-toggle="modal" data-target="#techModal1" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="ti-video-block">
+                                            <video muted loop playsinline preload="none" poster="images/technologies/1-preview.png">
+                                            <source src="images/technologies/1.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="ti-name">Стадія розігріву</div>
+                                        <div class="ti-descr">
+                                            <ol>
+                                            <li>Ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу.</li>
+                                            <li>Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</li>
+                                            </ol>
+                                        </div>
+                                        <div class="ti-show-more">Дізнатись подробиці</div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="technologies-item" data-toggle="modal" data-target="#techModal2" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="ti-video-block">
+                                            <video muted loop playsinline preload="none" poster="images/technologies/2-preview.png">
+                                            <source src="images/technologies/2.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="ti-name">
+                                            Хвиля
+                                        </div>
+                                        <div class="ti-descr">
+                                             <ol>
+                                                <li>
+                                                    Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних.
+                                                </li>
+                                                 <li>
+                                                   Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла. Підходить для лікування целюліту, спортивного масажу, розслаблення м'язів.     
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="ti-show-more">
+                                            Дізнатись подробиці
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="technologies-item" data-toggle="modal" data-target="#techModal3" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="ti-video-block">
+                                            <video muted loop playsinline preload="none" poster="images/technologies/3-preview.png">
+                                            <source src="images/technologies/3.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="ti-name">
+                                            Лімфодренаж
+                                        </div>
+                                        <div class="ti-descr">
+                                             <ol>
+                                                <li>
+                                                    Найглибший, найінтенсивніший з можливих (тиск до 80 мм Hg).
+                                                </li>
+                                                 <li>
+                                                    Тиск в 24-ох манжетах зменшується, коли хвиля наближається до проксимальної цільової області.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="ti-show-more">
+                                            Дізнатись подробиці
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="#" class="technologies-item" data-toggle="modal" data-target="#techModal4" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="ti-video-block">
+                                            <img src="images/technologies/4-preview.png" alt="">
+                                        </div>
+                                        <div class="ti-name">
+                                            Релаксація
+                                        </div>
+                                        <div class="ti-descr">
+                                             <ol>
+                                                <li>
+                                                   Заспокоює м’язи і тканини після інтенсивної роботи.
+                                                </li>
+                                                 <li>
+                                                    Ідеально для завершального лікування целюліту, синдрому втомлених ніг, після ліпосакції та вагітності.
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="ti-show-more">
+                                            Дізнатись подробиці
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="technologies-bottom-text" data-aos="fade-up" data-aos-delay="200">
+                                Нове покоління інтелектуальної пресотерапії. <br>
+                                Не мають рівних якість манжет і досконалість лікувальних програм.
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const items = document.querySelectorAll('.technologies-item');
+
+                            const isMobile = () => window.innerWidth <= 991;
+
+                            items.forEach(item => {
+                                const video = item.querySelector('video');
+                                /* ---------- DESKTOP: hover ---------- */
+                                const playOnHover = () => {
+                                item.addEventListener('mouseenter', () => {
+                                    if (!isMobile()) {
+                                    video.play();
+                                    }
+                                });
+                                item.addEventListener('mouseleave', () => {
+                                    if (!isMobile()) {
+                                    video.pause();
+                                    video.currentTime = 0;
+                                    }
+                                });
+                                };
+                                playOnHover();
+                                /* ---------- MOBILE: scroll ---------- */
+                                const observer = new IntersectionObserver(entries => {
+                                entries.forEach(entry => {
+                                    if (isMobile()) {
+                                    if (entry.isIntersecting) {
+                                        video.play();
+                                    } else {
+                                        video.pause();
+                                        video.currentTime = 0;
+                                    }
+                                    }
+                                });
+                                }, {
+                                threshold: 0.5
+                                });
+                                observer.observe(item);
+                            });
+                        });
+                        </script>
+
+                        <div class="modal fade tech-modal" id="techModal1" tabindex="-1">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"/>
+                                <path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"/>
+                                </svg>
+                            </button>
+                            <div class="modal-dialog modal-xs modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-video">
+                                        <video class="modal-video" controls loop playsinline>
+                                         <source src="images/technologies/1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="ti-name">
+                                        Стадія розігріву
+                                    </div>
+                                    <div class="ti-descr">
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                        <br>
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade tech-modal" id="techModal2" tabindex="-1">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"/>
+                                <path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"/>
+                                </svg>
+                            </button>
+                            <div class="modal-dialog modal-xs modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-video">
+                                        <video class="modal-video" controls loop playsinline>
+                                         <source src="images/technologies/2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="ti-name">
+                                        Хвиля
+                                    </div>
+                                    <div class="ti-descr">
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                        <br>
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade tech-modal" id="techModal3" tabindex="-1">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"/>
+                                <path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"/>
+                                </svg>
+                            </button>
+                            <div class="modal-dialog modal-xs modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-video">
+                                        <video class="modal-video" controls loop playsinline>
+                                         <source src="images/technologies/3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="ti-name">
+                                        Лімфодренаж
+                                    </div>
+                                    <div class="ti-descr">
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                        <br>
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade tech-modal" id="techModal4" tabindex="-1">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"/>
+                                <path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"/>
+                                </svg>
+                            </button>
+                            <div class="modal-dialog modal-xs modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-video">
+                                        <img src="images/technologies/4-preview.png" alt="">
+                                    </div>
+                                    <div class="ti-name">
+                                        Лімфодренаж
+                                    </div>
+                                    <div class="ti-descr">
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                        <br>
+                                        Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних. Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла, стимулюючи повернення та реабсорбцію рідин. Цей масажний ефект підходить для лікування целюліту, спортивного масажу, передліпосакції та м'язової релаксації.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $(document).ready(function () {
+                                $('.tech-modal').on('shown.bs.modal', function () {
+                                    const video = $(this).find('video').get(0);
+                                    if (video) {
+                                    video.currentTime = 0;
+                                    video.play();
+                                    }
+                                });
+                                $('.tech-modal').on('hide.bs.modal', function () {
+                                    const video = $(this).find('video').get(0);
+                                    if (video) {
+                                    video.pause();
+                                    video.currentTime = 0;
+                                    }
+                                });
+                            });
+                        </script>
+                        <!------end technologies-------->
+                    
+                        <div class="linfo-video-block fade-up" id="procedure">
+                            <div class="container">
+                                <div class="big-title" data-aos="fade-up" data-aos-delay="50">Процедура Linfopress Evolution PRO</div>    
+                                <div class="video-block js-video-block" data-aos="fade-up" data-aos-delay="200">
+                                    <!-- Видео превью -->
+                                    <div class="video-poster js-video-poster">
+                                        <video class="modal-video js-preview-video" muted loop playsinline preload="auto">
+                                            <source src="images/content/linfopress-video-prevue.mp4" type="video/mp4">
+                                        </video>
+
+                                        <div class="play-button">
+                                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.3965 4.11135C9.1042 4.20204 7 6.0722 7 8.59182V39.4082C7 42.7677 10.7428 44.9719 13.6816 43.3438L41.4902 27.9356C44.5137 26.2603 44.5137 21.7398 41.4902 20.0645L13.6816 4.65627C12.9469 4.24923 12.1606 4.08112 11.3965 4.11135Z"
+                                                    fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- YouTube -->
+                                    <div class="video-container">
+                                        <div class="js-youtube-player"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            (function () {
+
+                                // Подключаем API только 1 раз
+                                if (!window.youtubeApiLoaded) {
+                                    const tag = document.createElement('script');
+                                    tag.src = 'https://www.youtube.com/iframe_api';
+                                    document.head.appendChild(tag);
+                                    window.youtubeApiLoaded = true;
+                                }
+
+                                const blocks = document.querySelectorAll('.js-video-block');
+
+                                blocks.forEach((block, index) => {
+                                    const poster = block.querySelector('.js-video-poster');
+                                    const previewVideo = block.querySelector('.js-preview-video');
+                                    const playerContainer = block.querySelector('.js-youtube-player');
+
+                                    let player;
+                                    let isPlayerReady = false;
+
+                                    const playerId = 'youtube-player-' + index;
+                                    playerContainer.id = playerId;
+
+                                    window.onYouTubeIframeAPIReady = window.onYouTubeIframeAPIReady || function () {
+                                        blocks.forEach((block, i) => initPlayer(block, i));
+                                    };
+
+                                    function initPlayer(block, i) {
+                                        const container = block.querySelector('.js-youtube-player');
+
+                                        if (container.dataset.inited) return;
+                                        container.dataset.inited = 'true';
+
+                                        const ytPlayer = new YT.Player(container.id, {
+                                            videoId: 'dQw4w9WgXcQ',
+                                            playerVars: {
+                                                playsinline: 1,
+                                                controls: 1,
+                                                rel: 0,
+                                                modestbranding: 1
+                                            },
+                                            events: {
+                                                onReady: (e) => {
+                                                    isPlayerReady = true;
+                                                    e.target.pauseVideo();
+                                                },
+                                                onError: (e) => {
+                                                    console.error('YouTube Player Error:', e.data);
+                                                }
+                                            }
+                                        });
+
+                                        block._ytPlayer = ytPlayer;
+                                    }
+
+                                    poster.addEventListener('click', () => {
+                                        poster.classList.add('hidden');
+                                        previewVideo.pause();
+
+                                        if (block._ytPlayer && isPlayerReady) {
+                                            block._ytPlayer.playVideo();
+                                        }
+                                    });
+
+                                    const observer = new IntersectionObserver(entries => {
+                                        entries.forEach(entry => {
+                                            if (entry.isIntersecting) {
+                                                previewVideo.play().catch(() => {});
+                                            } else {
+                                                previewVideo.pause();
+
+                                                if (block._ytPlayer) {
+                                                    block._ytPlayer.pauseVideo();
+                                                }
+                                            }
+                                        });
+                                    }, {
+                                        threshold: 0.5
+                                    });
+
+                                    observer.observe(block);
+
+                                });
+
+                            })();
+                        </script>
+                        <!----end linfo-video-block-->
+
+                    <div class="advantages-big fade-up" id="advantages">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="50">Переваги Linfopress Evolution PRO</div>
+                            <div class="advantages-big-row row">
+                                <div class="col-lg-8">
+                                    <ul class="abr-ul">
+                                        <li data-aos="fade-up" data-aos-delay="0">
+                                            <span>1</span>
+                                            <span>
+                                                Перший в світі апарат для пресотерапії з масажем ділянок холки і бочків (love-handles)
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="200">
+                                            <span>2</span>
+                                            <span>
+                                                Нове покоління інтелектуальної пресотерапії: технологія біоміметичної послідовної пульсації
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="400">
+                                            <span>3</span>
+                                            <span>
+                                                Підвищена безпека завдяки контролю тиску в кожній манжеті
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="0">
+                                            <span>4</span>
+                                            <span>
+                                                Найзручніший в роботі. Манжети для ніг і рук зручно одягаються, мають три рівня блискавок для пацієнтів всіх розмірів
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="200">
+                                            <span>5</span>
+                                            <span>
+                                                Найкомфортніший завдяки етапам розігріву і релаксації
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="400">
+                                            <span>6</span>
+                                            <span>
+                                                Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт"
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="0">
+                                            <span>7</span>
+                                            <span>
+                                                Використовується у спортивній медицині (розігрів перед тренуваннями, регенерація тканин)
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="200">
+                                            <span>8</span>
+                                            <span>
+                                                Використовується у пост-операційній реабілітації для дренажу
+                                            </span>
+                                        </li>
+                                        <li data-aos="fade-up" data-aos-delay="400">
+                                            <span>9</span>
+                                            <span>
+                                                Найвища якість матеріалів (апарат класу преміум)
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="abr-img-block">
+                                        <img src="images/content/abr-img.png" alt="" data-aos="fade-up" data-aos-delay="200">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readings fade-up" id="indications">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="readings-block" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="app-video-bg">
+                                            <video autoplay muted loop playsinline>
+                                                <source src="images/presentation-video.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="app-video-content">
+                                                 <div class="readings-block-name">Показання</div> 
+                                                 <ul class="readings-block-ul">
+                                                    <li>
+                                                        Лікування едематозного целлюліту
+                                                    </li>
+                                                    <li>
+                                                        Зменшення затримки рідини та набряків    
+                                                    </li>
+                                                    <li>
+                                                        Підготування та реабілітація після ліпосакції
+                                                    </li>
+                                                    <li>
+                                                        Пост-операційна реабілітація після мастектомії
+                                                    </li>
+                                                    <li>
+                                                        Детоксикація тканин та лімфодренаж    
+                                                    </li>
+                                                    <li>
+                                                        Спорт: Підготовка, DOMS (крепатура), регенерація зв’язок
+                                                    </li>
+                                                    <li>
+                                                        Покращення кровообігу, зняття втоми ніг
+                                                    </li>
+                                                    <li>
+                                                        Післяпологове відновлення, симптоми менопаузи
+                                                    </li>
+                                                 </ul>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="contraindications-block" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="contraindications-block-name">Протипоказання</div> 
+                                        <ul class="contraindications-block-ul">
+                                            <li>
+                                                Онкологія
+                                            </li>
+                                            <li>    
+                                                Порушення цілісності шкірного покриву
+                                            </li>
+                                            <li>
+                                                Епілепсія, порушення психіки
+                                            </li>
+                                            <li>
+                                                Цукровий діабет (декомпенсована форма)
+                                            </li>
+                                            <li>
+                                                Аутоімунні захворювання    
+                                            </li>
+                                            <li>
+                                                Хронічні захворювання на стадії загострення
+                                            </li>
+                                            <li>
+                                                ГРВІ, грип
+                                            </li>
+                                        </ul>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-block fade-up">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="50">
+                                Досвід лікарів
+                            </div>
+                            <div class="experience-block-text" data-aos="fade-up" data-aos-delay="200">
+                                Фахівці «Арден-Палац» оцінили зручність в роботі манжет для ніг пацієнтів. Завдяки трьом рядам блискавок штани ідеально адаптуються для пацієнтів зростом від 1,5 до 2 метрів.
+                            </div>
+                            <div class="experience-block-bg" data-aos="fade-up" data-aos-delay="300">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="experience-block-img-block" data-aos="fade-up" data-aos-delay="200">
+                                            <img src="images/content/experience-block-img.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="eb-title" data-aos="fade-up" data-aos-delay="300">Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря</div>
+                                        <div class="eb-descr" data-aos="fade-up" data-aos-delay="400">Працюючи в сфері естетичної медицини та реабілітації вже багато років, я мала справу з різними апаратами для пресотерапії. Але коли в нашій клініці з'явився Linfopress Evolution PRO, це повністю змінило підхід до процедури. З точки зору фахівця, апарат неймовірно зручний у щоденній роботі. Одягання манжет більше не забирає багато часу, а завдяки трьом рядам блискавок штани ідеально та швидко адаптуються під пацієнтів будь-якої комплекції — від мініатюрних дівчат до високих чоловіків зростом під два метри. Але головна його перевага — це технологія біоміметичної послідовної пульсації. Мої пацієнти в повному захваті від поетапного підходу. Стадія м'якого розігріву ідеально готує судини та тканини , що дозволяє нам абсолютно безболісно працювати навіть з пацієнтками, які мають чутливий фіброзний целюліт.</div>
+                                        <div class="eb-name" data-aos="fade-up" data-aos-delay="500">Олександр Віталієвський</div>
+                                        <div class="eb-profession" data-aos="fade-up" data-aos-delay="600">Лікар естетичної медицини</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-this fade-up" id="why">
+                        <div class="why-this-video-bg">
+                            <video autoplay muted loop playsinline>
+                                <source src="images/why-this-video.mp4" type="video/mp4">
+                            </video>
+                            <div class="why-this-video-content">
+                                <div class="container">
+                                    <div class="big-title" data-aos="fade-up" data-aos-delay="50">
+                                        Чому саме Linfopress Evolution PRO
+                                    </div>
+                                    <div class="why-this-row row">
+                                        <div class="col-lg-4">
+                                            <div class="why-this-div-for-img">
+                                                <img src="images/content/why-this-img.png" alt="" data-aos="fade-up" data-aos-delay="200">
+                                            </div>    
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="why-this-right-row row">
+                                                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
+                                                    <div class="why-this-item">
+                                                        <span>
+                                                            1
+                                                        </span>
+                                                        <span>
+                                                            Унікальна комбінація різних форм пресомасажу в одній програмі
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                                                    <div class="why-this-item">
+                                                        <span>
+                                                            2
+                                                        </span>
+                                                        <span>
+                                                            Преміальна якість матеріалів виконання
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                                                    <div class="why-this-item">
+                                                        <span>
+                                                            3
+                                                        </span>
+                                                        <span>
+                                                            Абсолютно унікальна куртка для пресомасажу холки і бочків
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                                                    <div class="why-this-item">
+                                                        <span>
+                                                            4
+                                                        </span>
+                                                        <span>
+                                                            Найзручніший метод одягання манжет
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12" data-aos="fade-up" data-aos-delay="400">
+                                                    <div class="why-this-item">
+                                                        <span>
+                                                            5
+                                                        </span>
+                                                        <span>
+                                                            Найінтенсивніший лімфодренажний масаж (завдяки підготовці та біоміметиці)
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="set-block">
+                                        <div class="set-block-title" data-aos="fade-up" data-aos-delay="50">
+                                            Комплект поставки
+                                        </div>
+                                        <div class="set-block-row row">
+                                            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                                                <div class="set-block-item">
+                                                    <div>
+                                                        <img src="images/content/set1.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        Апарат
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                                                <div class="set-block-item">
+                                                    <div>
+                                                        <img src="images/content/set2.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        Функціональний візок    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                                                <div class="set-block-item">
+                                                    <div>
+                                                        <img src="images/content/set3.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        Дві манжети для ніг (штани і пояс)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="500">
+                                                <div class="set-block-item">
+                                                    <div>
+                                                        <img src="images/content/set4.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        Куртка для масажу верхньої частини тулубу
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2" data-aos="fade-up" data-aos-delay="600">
+                                                <div class="set-block-item">
+                                                    <div>
+                                                        <img src="images/content/set5.png" alt="">
+                                                    </div>
+                                                    <div>
+                                                        Дві манжети для рук
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        
+                    </div>
+                    <div class="questions fade-up" id="faq">
+                        <div class="container">
+                            <div class="big-title" data-aos="fade-up" data-aos-delay="50">Питання та відповіді</div>
+                            <div class="questions-text" data-aos="fade-up" data-aos-delay="200">
+                                Отримайте відповіді на поширені запитання про Linfopress Evolution PRO та про те, <br> як ця система може змінити вашу практику
+                            </div>
+                            <ul class="faq-accordion">
+                                <li class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="faq-question">
+                                    Чим Linfopress Evolution PRO відрізняється від традиційних систем пресотерапії?
+                                    <span class="faq-icon"></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                    Linfopress Evolution PRO оснащений передовою технологією біометричних імпульсів
+                                    з 24 повітряними камерами, що перекриваються, імітуючи природні рухи м’язів.
+                                    На відміну від традиційних систем, він пропонує індивідуальні програми,
+                                    градієнтне регулювання компресії до 80 мм рт.ст. і 4 режими динамічної компресії.
+                                    </div>
+                                </li>
+
+                                <li class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="faq-question">
+                                    Яка підготовка потрібна для роботи з системою?
+                                    <span class="faq-icon"></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                    Спеціальної підготовки не потрібно. Рекомендується зручний одяг та консультація лікаря.
+                                    </div>
+                                </li>
+
+                                <li class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="faq-question">
+                                    Чи можна поєднувати Linfopress Evolution PRO з іншими методами лікування?
+                                    <span class="faq-icon"></span>
+                                    </div>
+                                    <div class="faq-answer">
+                                    Так, система чудово комбінується з масажем, фізіотерапією та реабілітаційними програмами.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            $(function(){
+
+                            $('.faq-question').on('click', function(){
+
+                                const item = $(this).closest('.faq-item');
+
+                                if(item.hasClass('active')){
+                                item.removeClass('active')
+                                    .find('.faq-answer')
+                                    .slideUp(250);
+                                return;
+                                }
+
+                                $('.faq-item.active')
+                                .removeClass('active')
+                                .find('.faq-answer')
+                                .slideUp(250);
+
+                                item.addClass('active')
+                                    .find('.faq-answer')
+                                    .slideDown(250);
+
+                            });
+
+                            });
+                        </script>
+                    </div>
+
+
+                </div>
+			</div>
+			<footer class="fade-up">
+				<div class="container">
+					<div class="footer-top">
+						<a href="/" class="footer-logo">
+							<img src="images/footer-logo-linfopress.svg" alt="footer-logo">
+						</a>
+					</div>
+					<div class="footer-bottom">
+						<div class="row">
+							<div class="col-lg-6">
+								Linfopress Evolution PRO це надійне рішення для клінік, де важлива ефективність, комфорт і швидкий видимий результат
+							</div>
+							<div class="col-lg-6">
+								<ul class="footer-nav">
+									<li>
+										<a href="tel:+380937205277">
+											<img src="images/phone.svg" alt="">
+											+380 93 720 52 77
+										</a>
+									</li>
+									<li>
+										<a href="mailto:sampleemail@gmail.com">
+											<img src="images/mail.svg" alt="">
+											sampleemail@gmail.com
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<!--scripts-->
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/bootstrap-select.js"></script>
+		
+		<link href="css/swiper.css" rel="stylesheet">
+		<script type="text/javascript" src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+		<script>
+			AOS.init({
+                once: true,
+                mirror: false,
+            });
+		</script>
+	</body>
+</html>
